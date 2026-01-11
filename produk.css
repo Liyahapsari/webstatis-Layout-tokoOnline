@@ -1,0 +1,289 @@
+/* ------------------------------
+   GLOBAL
+--------------------------------*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+}
+
+/* ------------------------------
+   HEADER
+--------------------------------*/
+.header {
+  border: 1px solid #fc0606;
+  padding: 20px;
+  background-color: #fff;
+}
+.header h1 {
+  color: #0424f3;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+}
+.logo img {
+  width: 120px;
+  height: 140px;
+}
+.product {
+  color: #ef05c4;
+  font-weight: bold;
+}
+.menu {
+  float: right;
+  list-style: none;
+  margin: 0;
+}
+
+.menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.menu li a {
+  color: rgba(199, 44, 251, 0.865); /* warna biru */
+  text-decoration: underline; /* garis bawah */
+  font-weight: bold;
+}
+
+.menu li a:hover {
+  color: rgb(239, 46, 12); /* warna saat mouse diarahkan */
+}
+
+/* Menghapus float agar header menyesuaikan tinggi */
+.header::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* ------------------------------
+   BANNER
+--------------------------------*/
+.banner {
+  background-color: rgb(146, 6, 239);
+  height: 100px;
+  margin: 20px 0;
+  border: 2px solid #2a37f1;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.banner h2 {
+  color: #fff;
+}
+
+/* ------------------------------
+   SIDEBAR
+--------------------------------*/
+.sidebar {
+  width: 20%;
+  float: left;
+  border: 1px solid #fff;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.sidebar {
+  color: #3704af;
+  margin-left: 20px;
+}
+
+.sidebar li a {
+  color: #282cf0f3;
+}
+.sidebar a:hover {
+  color: rgba(198, 2, 228, 0.941); /* warna saat mouse diarahkan */
+}
+/* ------------------------------
+   CONTENT / PRODUK
+--------------------------------*/
+.content {
+  width: 75%;
+  float: right;
+  margin-bottom: 60px;
+}
+.product {
+  width: 20%;
+  float: left;
+  margin-right: 2.222%;
+  border: 1px solid #ebe3e2;
+  padding: 15px;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+/* Hilangkan margin pada produk terakhir */
+.product:last-child {
+  margin-right: 0;
+}
+.product:hover {
+  box-shadow: 0 0 10px #ed26f4;
+  transform: translateY(-3px);
+  transition: 0.4s;
+}
+.product img {
+  width: 100%;
+  height: 250%;
+  object-fit: cover;
+}
+/* ------------------------------
+   FOOTER
+--------------------------------*/
+.footer {
+  clear: both;
+  margin-top: 60px;
+  padding: 25px 0;
+  width: 100%;
+  background-color: #9a5cd4;
+  text-align: center;
+}
+/* IMAGE*/
+img {
+  aspect-ratio: 3/4;
+  object-fit: contain;
+}
+/*CONTACT PAGE STYLE*/
+/* Header sederhana (jika halaman kntak tidak pakai Bootsrap)*/
+.header {
+  padding: 20px;
+  border-bottom: 1px solid #5708b0;
+}
+.header nav a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #de1919;
+}
+.header nav a.active {
+  font-weight: bold;
+}
+/*BANNER HALAMAN*/
+.banner {
+  background-color: #7f0cc6;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #2106be;
+  margin: 20px;
+}
+/*Container utama*/
+.container {
+  width: 90%;
+  margin: 30px auto;
+  overflow: hidden; /* clear float*/
+}
+/* Layout 2 kolom */
+.contact-info,
+.contact-form {
+  width: 42%;
+  float: left;
+  border: 1px solid #fe06c8;
+  padding: 20px;
+  box-sizing: border-box;
+}
+/* Jarak antar kolom */
+.contact-info {
+  margin-right: 4%;
+  color: #071bef;
+}
+/* Form */
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #d519db;
+}
+.social-icons a i {
+  color: rgba(255, 99, 15, 0.865); /* warna biru */
+  font-weight: bold;
+}
+.social-icons a i:hover {
+  color: rgb(149, 92, 248); /* warna saat mouse diarahkan */
+}
+/* Tombol */
+.contact-form button {
+  padding: 10px 20px;
+  border: none;
+  background: #7a56e6;
+  color: #e8dde4;
+  cursor: pointer;
+}
+.contact-form button:hover {
+  background: #9a07bf;
+}
+.contact-form {
+  color: #9206ef;
+}
+.header nav a.active {
+  font-weight: bold;
+}
+/* PRODUK SECTION */
+.product-section {
+  color: #de0505;
+  margin-bottom: 40px;
+}
+
+.produc-selection {
+  color: #f50909;
+}
+.judul {
+  text-align: center;
+  line-height: 1.3;
+}
+
+.judul-atas {
+  display: block;
+  font-size: 16px;
+  /* ukuran lebih kecil */
+  font-weight: bold;
+}
+
+.judul-bawah {
+  display: block;
+  font-size: 16px;
+  /* ukuran lebih besar */
+  font-weight: bold;
+}
+
+/* CLEAR FLOAT */
+.product-list::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* PRICE */
+.price {
+  color: #eb18feeb;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 14px;
+}
+/* BADGE */
+.badge {
+  position: left;
+  top: 10px;
+  left: 10px;
+  background: #d72e11;
+  color: white;
+  padding: 5px 8px;
+  font-size: 12px;
+}
+
+.badge.best {
+  background: #27ae60;
+}
